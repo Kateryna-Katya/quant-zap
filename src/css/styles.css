@@ -1099,3 +1099,55 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 .burger.active span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+/* --- ЭТАП 5.2: СТИЛИ ЮРИДИЧЕСКИХ СТРАНИЦ --- */
+.pages {
+  padding: 100px 0;
+  background: var(--color-white);
+  min-height: 80vh;
+}
+
+.pages .container {
+  max-width: 800px;
+  /* Сужаем для лучшей читаемости текста */
+}
+
+.pages h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--color-dark);
+}
+
+.pages h2 {
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
+  color: var(--color-dark);
+}
+
+.pages p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.pages ul {
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.pages ul li {
+  list-style: disc;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+/* Адаптив для страниц */
+@media (max-width: 768px) {
+  .pages {
+    padding: 60px 0;
+  }
+
+  .pages h1 {
+    font-size: 2rem;
+  }
+}
