@@ -1,56 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/quant-zap/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quant-Zap — Разработка AI-ботов и автоматизация</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script type="module" crossorigin src="/quant-zap/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/quant-zap/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/quant-zap/assets/styles-Yr1dvM_R.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          <span class="logo__icon"></span>
+          <span class="logo__text">Quant-Zap</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#tech" class="nav__link">Технологии</a></li>
+              <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+              <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+              <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать</a>
+          <button class="burger" aria-label="Menu">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+  <div class="hero__bg">
+      <div class="hero__circle hero__circle--1"></div>
+      <div class="hero__circle hero__circle--2"></div>
+  </div>
+
+  <div class="container hero__container">
+      <div class="hero__content">
+          <div class="hero__badge" data-aos="fade-down">
+              <span class="badge__dot"></span> AI-инструменты для реальных задач
+          </div>
+          <h1 class="hero__title" id="hero-title">
+              Разработка ботов: от простых чатиков до AI-ассистентов
+          </h1>
+          <p class="hero__subtitle">
+              Создаем передовую цифровую инфраструктуру для вашего бизнеса. Решения, которые меняют правила игры и открывают новые возможности для автоматизации.
+          </p>
+          <div class="hero__btns">
+              <a href="#contact" class="btn btn--primary btn--lg">Запросить доступ</a>
+              <a href="#tech" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+
+      <div class="hero__visual">
+          <div class="hero__card">
+              <div class="card__header">
+                  <div class="card__dots"><span></span><span></span><span></span></div>
+                  <div class="card__label">quant-zap.fit / ai-bot</div>
+              </div>
+              <div class="card__body">
+                  <div class="chat-line chat-line--in">Привет! Чем могу помочь?</div>
+                  <div class="chat-line chat-line--out">Разработай мне стратегию роста...</div>
+                  <div class="chat-line chat-line--in chat-line--ai">
+                      <span class="ai-typing">Анализирую данные...</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="desc" id="tech">
+  <div class="container">
+      <div class="desc__grid">
+          <div class="desc__info">
+              <h2 class="desc__title">Интеллектуальные решения, которые меняют правила игры</h2>
+              <p class="desc__text">
+                  Quant-Zap — это не просто разработка ботов. Мы строим <strong>передовую цифровую инфраструктуру</strong>, позволяя компаниям в Европе переосмыслить подход к развитию и автоматизации клиентского опыта.
+              </p>
+              <p class="desc__text">
+                  Наши AI-инструменты для реальных задач охватывают весь спектр: от автоматических ответов в мессенджерах до сложных нейросетевых ассистентов, способных обучаться на ваших данных.
+              </p>
+              <div class="desc__stats">
+                  <div class="stat-item">
+                      <span class="stat-item__num">2 мин</span>
+                      <span class="stat-item__label">Подключение занимает 2 минуты</span>
+                  </div>
+                  <div class="stat-item">
+                      <span class="stat-item__num">100%</span>
+                      <span class="stat-item__label">Инновационная технология</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="desc__features">
+              <div class="feature-card">
+                  <div class="feature-card__icon"><i class="bi bi-cpu"></i></div>
+                  <h3 class="feature-card__title">Технология нового поколения</h3>
+                  <p class="feature-card__desc">Используем последние модели LLM для создания естественного диалога.</p>
+              </div>
+
+              <div class="feature-card">
+                  <div class="feature-card__icon"><i class="bi bi-shield-check"></i></div>
+                  <h3 class="feature-card__title">Безопасность данных</h3>
+                  <p class="feature-card__desc">Локальное развертывание и полное соответствие стандартам безопасности ЕС.</p>
+              </div>
+
+              <div class="feature-card">
+                  <div class="feature-card__icon"><i class="bi bi-graph-up-arrow"></i></div>
+                  <h3 class="feature-card__title">Стратегия роста</h3>
+                  <p class="feature-card__desc">Наши боты не просто отвечают, они конвертируют и ведут аналитику.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__grid">
+      <div class="footer__brand">
+          <a href="/" class="logo logo--footer">
+              <span class="logo__icon"></span>
+              <span class="logo__text">Quant-Zap</span>
+          </a>
+          <p class="footer__tagline">Переосмыслите подход к развитию через AI-технологии нового поколения.</p>
+      </div>
+
+      <div class="footer__nav">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+              <li><a href="#" class="footer__link">Главная</a></li>
+              <li><a href="#tech" class="footer__link">Технологии</a></li>
+              <li><a href="#benefits" class="footer__link">Преимущества</a></li>
+              <li><a href="#blog" class="footer__link">Блог</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__legal">
+          <h4 class="footer__title">Юридическая информация</h4>
+          <ul class="footer__list">
+              <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+              <li><a href="cookies.html" class="footer__link">Cookie Policy</a></li>
+              <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+              <li><a href="return.html" class="footer__link">Return Policy</a></li>
+              <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+              <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__contacts">
+          <h4 class="footer__title">Контакты</h4>
+          <ul class="footer__list">
+              <li><a href="tel:+493098765432" class="footer__link"><i class="bi bi-telephone"></i> +49 30 9876 5432</a></li>
+              <li><a href="mailto:hello@quant-zap.fit" class="footer__link"><i class="bi bi-envelope"></i> hello@quant-zap.fit</a></li>
+              <li><span class="footer__link footer__link--static"><i class="bi bi-geo-alt"></i> Friedrichstraße 176-179, 10117 Berlin, Germany</span></li>
+          </ul>
+      </div>
+  </div>
+  <div class="container footer__bottom">
+      <p>&copy; 2026 Quant-Zap. Платформа уже доступна в Европе.</p>
   </div>
 </footer>
-
-
+    <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
   </body>
 </html>
